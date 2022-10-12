@@ -1,0 +1,24 @@
+body{
+    margin: 1em;
+    padding: 1em;
+}
+    ul{
+        margin: 0;
+        padding: 0;
+        text-align: justify;
+    }
+    li{
+        list-style-type: none;
+        display: inline-block;
+
+    }
+    @media (max-width: 799px) {
+        main{width: calc(100%-4em);}
+        .row{flex-direction: column;}
+        #intro{
+            display: none;
+        }
+    }
+    img{max-width: 700px
+    ;
+display: flex;}

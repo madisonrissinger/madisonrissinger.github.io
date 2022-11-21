@@ -7,7 +7,7 @@
     <title>Related Books</title>
     <link rel="stylesheet" href="style/styles1.css">
 </head>
-<body>
+<body id="relatedbooks">
     <div class="row">
         <div class="col-1"><h1>Allison in Wonderland</h1>
         <nav>
@@ -18,8 +18,41 @@
         <li><a href="relatedbooks.html">Related Books</a></li>
     </ul>
     </nav>
-</div>
-        <div class="col-2">Related Books</div>
     </div>
-</body>
+    <div>
+        <div style=" width: 50%; margin: 0 auto; padding-left: 350px;">
+            <div class="col-2">Related Books</div>
+                <div><img src="images/book-cover.png" alt="Alice in Wonderland cover"></div>
+                <div class="centertext">Alice in Wonderland - Lewis Carroll</div>
+                <div class="buynow">BUY NOW</div>
+
+                <div><img src="images/black-cat-cover.jpg" alt="black cat cover"></div>
+                <div class="centertext"> The Black Cat - Edgar Allen Poe</div>
+                <div class="buynow">BUY NOW</div>
+
+                <div><img src="images/dream-cover.jpg" alt="dream psychology cover"></div>
+                <div class="centertext">Dream Psychology - Sigmund Freud</div>
+                <div class="buynow">BUY NOW</div>
+   
+            <div><img src="images/hamlet-cover.jpg" alt="hamlet cover"></div>
+               <div class="centertext">Hamlet - William Shakespeare</div>
+               <div class="buynow">BUY NOW</div>
+
+            </div>
+        </div>
+            </div>
+            <button id="toggle-nav" type="button">&#9776;</button>
+            <script>window.onload = function() {
+                // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+                let toggleNav = document.getElementById('toggle-nav');
+          
+                // Tell button to do something on click
+                toggleNav.addEventListener('click', function(){
+          
+                  // toggle the body's class attribute
+                  document.body.classList.toggle('nav-open');
+          
+                });
+              };</script>
+        </body>
 </html>

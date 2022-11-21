@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Author's Dream</title>
     <link rel="stylesheet" href="style/styles1.css">
+    <link rel="stylesheet" href="https://github.com/googlefonts/DancingScript">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Inika/about?query=inika">
 </head>
-<body>
+<body id="home">
     <div class="row">
         <div class="col-1"><h1>Allison in Wonderland</h1>
-        <nav>
-        <ul>
+        <nav id="primary-nav">
+        <ul id="navbar1">
         <li><a href="index.html">Author's Dream</a></li>
         <li><a href="rabbithole.html">Down the Rabbit Hole</a></li>
         <li><a href="teaparty.html">Tea Party Review</a></li>
@@ -20,12 +22,27 @@
     </nav>
 </div>
 <div>
-        <div class="col-2">Author's Dream</div>
-        <div class="general">Charles Lutwidge Dodgson </div>
-            <div class="general">(Lewis Carroll)</div>
-           <div class="centertext"> Lewis Carroll was an English novelist and poet. He is best known as the author of the children's book Alice's Adventures in Wonderland (1865) and its sequel Through the Looking-Glass (1871)—two of the most popular works of fiction in the English language.</div>
-        </div>
-        </div>
+<div style=" width: 50%; margin: 0 auto;">
+    <div class="col-2">Author's Dream</div>
+    <div class="general">Charles Lutwidge Dodgson </div>
+        <div class="general">(Lewis Carroll)</div>
+       <div class="centertext"> Lewis Carroll was an English novelist and poet. He is best known as the author of the children's book Alice's Adventures in Wonderland (1865) and its sequel Through the Looking-Glass (1871)—two of the most popular works of fiction in the English language.</div>
     </div>
+</div>
+</div>
+    </div>
+    <button id="toggle-nav" type="button">&#9776;</button>
+    <script>window.onload = function() {
+        // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+        let toggleNav = document.getElementById('toggle-nav');
+  
+        // Tell button to do something on click
+        toggleNav.addEventListener('click', function(){
+  
+          // toggle the body's class attribute
+          document.body.classList.toggle('nav-open');
+  
+        });
+      };</script>
 </body>
 </html>

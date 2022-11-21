@@ -7,7 +7,7 @@
     <title>Down the Rabbit Hole</title>
     <link rel="stylesheet" href="style/styles1.css">
 </head>
-<body>
+<body id="rabbithole">
     <div class="row">
         <div class="col-1"><h1>Allison in Wonderland</h1>
         <nav>
@@ -19,7 +19,25 @@
     </ul>
     </nav>
 </div>
+<div>
+    <div style=" width: 50%; margin: 0 auto; text-align: center;">
         <div class="col-2">Down the Rabbit Hole</div>
+       <div><img src="images/book-cover.png" alt="Alice in Wonderland"></div>
+           <div class="centertext">Alice's Adventures in Wonderland (commonly Alice in Wonderland) is an 1865 English novel by Lewis Carroll. It details the story of a young girl named Alice who falls through a rabbit hole into a fantasy world of anthropomorphic creatures. It is seen as an example of the literary nonsense genre.</div>
+        </div>
     </div>
-</body>
+        <button id="toggle-nav" type="button">&#9776;</button>
+        <script>window.onload = function() {
+            // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+            let toggleNav = document.getElementById('toggle-nav');
+      
+            // Tell button to do something on click
+            toggleNav.addEventListener('click', function(){
+      
+              // toggle the body's class attribute
+              document.body.classList.toggle('nav-open');
+      
+            });
+          };</script>
+    </body>
 </html>

@@ -3,13 +3,14 @@ body{background: rgb(61, 64, 32);}
     gap: 1em;
     display: flex;
     text-align: center;
+    height: 100%
 }
-h1{font-family: Dancing Script;
+h1{font-family: DancingScript-Bold;
 font-size: 55px;
 color: rgb(255, 230, 0);
 padding: 40px;}
 .col-1{width: 360px;
-height: 900px;
+height: fit-screen;
 background-color: rgb(77, 124, 132);
 margin-left: -10px;
 margin-top: -10px;
@@ -17,19 +18,57 @@ margin-bottom: -10px;}
 .col-2{
 font-family:Inika;
 font-size: 40px;
-padding-top: 100px;
+padding-top: 150px;
+padding-bottom: 50px;
 color: rgb(255, 200, 220);}
 nav{text-align: left;}
 ul{list-style: none;
 line-height: 70px;;}
 nav a{
-color: white;
 text-decoration: none;
 font-family: Inika;
 font-size: 20px;}
-nav a:hover{
+nav a:link, nav a:visited{color: white;}
+nav a:hover, body#home nav li:nth-child(1) a, 
+body#rabbithole nav li:nth-child(2) a, 
+body#teaparty nav li:nth-child(3) a,
+body#relatedbooks nav li:nth-child(4) a{
     color: rgb(255, 200, 220);}
-.general{color: white;}
+.general{color: white;
+font-size: 30px;}
+img{padding-bottom: 50px;}
 .centertext{text-align: center;
-max-width: 400px;
-display:block;}
+color: white;
+font-size: 25px;
+float: right;
+padding-bottom: 40px;}
+.buynow{text-align: center;
+    color: rgb(255, 230, 0);
+    font-size: 40px;
+    padding-bottom: 40px;
+font-family: Inika;}
+    
+.quote{text-align: center;
+    color: white;
+    font-size: 25px;
+}
+#toggle-nav{position: absolute;
+left:0; top:0;
+display: none;}
+@media (max-width: 767px){
+    .col-1{display: none;}
+    #toggle-nav{
+        
+      display: block; /* display button beneath breakpoint */
+    }
+    #primary-nav{
+      max-height: 0;
+    }
+    #primary-nav li{
+      display: block;
+    }
+    /* Here, we override the rule when the body has a class of nav-open */
+    body.nav-open #primary-nav{
+      max-height: 600px;
+    }
+  }

@@ -1,4 +1,6 @@
-    body{background: rgb(34, 51, 58);}
+    body{background: rgb(34, 51, 58);
+    margin: 0;
+padding: 0;}
     .row{display: flex;
     text-align: center;
 padding: 30px;}
@@ -6,13 +8,15 @@ padding: 30px;}
     .col-1{width: 33.5%;}
     h1{color: white;
     font-size: 40px;
-    margin-left: 45px;}
+    margin-left: 45px;
+    font-family: Inter;}
     h2{color: rgb(249, 204, 6);
     font-family: Dancing Script;
 font-size: 30px;
 margin-left: 45px;}
     .maintext{color: white;
-        margin-left: 45px;}
+        margin-left: 45px;
+    font-family: Inter;}
     nav{
         background-color:rgb(234, 224, 213);
     padding-left: 700px;}
@@ -36,16 +40,41 @@ margin-left: 45px;}
         opacity: 40%; }
 .col-2{text-align: left;
 width: 50%;
+font-family: Inter;
 font-size: 25px;
 color: white;
 margin-top: 50px;
 margin-left: 45px;
-width: 34%;}
+width: 40%;}
 .col-3{width:60%;
-text-align: right;}
+text-align: right;
+height: 50%;}
 .top{background-color: rgb(234, 224, 213);
 display:flex;
 margin-left: -6px;
 margin-right: -6px;}
+.col-4{background-color: rgb(234, 224, 213);
+    width: 33.5%; padding: 10px;
+height: 400px;}
 .maintitle{margin-left: 45px;}
-.logo{margin-left: 45px;}
+#logo{margin-left: 45px;}
+#toggle-nav{position: absolute;
+    left:0; top:0;
+    display: none;}
+    @media (max-width: 767px){
+        .col-1{display: none;}
+        #toggle-nav{
+            
+          display: block; /* display button beneath breakpoint */
+        }
+        #primary-nav{
+          max-height: 0;
+        }
+        #primary-nav li{
+          display: block;
+        }
+        /* Here, we override the rule when the body has a class of nav-open */
+        body.nav-open #primary-nav{
+          max-height: 600px;
+        }
+      }

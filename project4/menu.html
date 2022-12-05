@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About-Lifetime Tea Room</title>
-    <link rel="stylesheet" href="style/styles4.css">
+    <title>Lifetime Tea Room</title>
     <link rel="Dancing Script" href="https://fonts.google.com/specimen/Dancing+Script">
     <link rel="Inter" href="https://fonts.google.com/specimen/Inter?query=inter">
-
+    <link rel="stylesheet" href="style/styles4.css">
 </head>
 <body>
     <div class="top">
-        <div class="logo"><img src="images/logo.png" alt="logo"></div>
+        <div id="logo"><img src="images/logo.png" alt="logo"></div>
         <nav>
         <ul>
         <li><a href="index.html">Home</a></li>
@@ -24,9 +23,61 @@
     </nav> </div>
     <div><h1>Lifetime Tea Room</h1></div>
     <div><h2>A tea party for all!</h2></div>
-    <div class="row1">
-        <div class="col-2">A place for everyone to kick back and relax while enjoying tea party snacks in regular sized portions. We want for everyone; old, young, and any gender/race, to feel comfortable and welcome while  spending time in our tea room. </div>
-        <div class="col-3"><img src="images/teabag.png" alt="tea"></div>
+    <div class="maintext">4223 23 S Street, Philadelphia, PA, 19145</div>
+    <div class="maintext">(267)867-5309 </div></div>
+
+    <div class="row">
+        <div class="col-4">Tea & Drinks <br>
+            Tea <br>
+            chamomille, mint, english breakfast, <br> grey, chai, & many fruit flavors <br>
+            Milk <br>
+            2%, 1%, whole, half and half, <br> oat, & coconut <br>
+            Other <br>
+            sugar, honey, cinnamon, <br> syrups, & a variety of fruit <br>
+            Other Drinks <br>
+            coffee, water, lemonade, <br> apple juice,& limited sodas
+            
+            </div>
+        <div class="col-4">Sweets <br>
+            different flavors offerred <br>
+            Brownies <br>
+            Cupcakes <br>
+            Scones <br>
+            Muffins <br>
+            Macaroons <br>
+            Cake pops <br>
+            Shortcake <br>
+            Fruit Tartes <br>
+            Danishes </div>
+        <div class="col-4">Sandwhiches <br>
+            comes with chips or fruit <br>
+            Meat <br>
+            Turkey & Ham 8.00 <br>
+            Egg, Chicken, & Tuna Salad 7.00 <br>
+            Vegatables/Fruits 0.75 each <br>
+            tomato, onion, lettuce, peppers, cucumber, spinach, pickles, apples, pears, grapes, and strawberries
+            Cheese 
+            American, Provolone, Colby-Jack, Mozzeralla, Brie, Gouda, Swiss, or Cheddar
+            Bread
+            Italian, Whole Wheat, Pretzel Roll, or Kaiser Roll
+            
+            
+            
+            </div>
     </div>
+    <button id="toggle-nav" type="button">&#9776;</button>
+    <script>window.onload = function() {
+        // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+        let toggleNav = document.getElementById('toggle-nav');
+  
+        // Tell button to do something on click
+        toggleNav.addEventListener('click', function(){
+  
+          // toggle the body's class attribute
+          document.body.classList.toggle('nav-open');
+  
+        });
+      };</script>
+
 </body>
 </html>

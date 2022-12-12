@@ -12,8 +12,8 @@
 </head>
 <body>
     <div class="top">
-        <div class="logo"><img src="images/logo.png" alt="logo"></div>
-        <nav>
+        <div id="logo"><img src="images/lifetime-tea-room.png" alt="logo"></div>
+        <nav id="priamary-nav">
         <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -32,5 +32,19 @@
                     <div class="col-2">Give us a call or shoot us an email and one of our employees will be with you as soon as possible!</div></div>
                     <div class="col-3"><img src="images/teabag.png" alt="tea"></div>
     </div>
+    <button id="toggle-nav" type="button">&#9776;</button>
+    <script>window.onload = function() {
+        // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+        let toggleNav = document.getElementById('toggle-nav');
+  
+        // Tell button to do something on click
+        toggleNav.addEventListener('click', function(){
+  
+          // toggle the body's class attribute
+          document.body.classList.toggle('nav-open');
+  
+        });
+      };</script>
+
 </body>
 </html>

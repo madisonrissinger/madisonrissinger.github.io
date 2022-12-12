@@ -12,8 +12,8 @@
 </head>
 <body>
     <div class="top">
-        <div class="logo"><img src="images/logo.png" alt="logo"></div>
-        <nav>
+        <div id="logo"><img src="images/lifetime-tea-room.png" alt="logo"></div>
+        <nav id="primary-nav">
         <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -22,11 +22,29 @@
         <li><a href="contact.html">Contact</a></li>
     </ul>
     </nav> </div>
-    <div><h1>Lifetime Tea Room</h1></div>
-    <div><h2>A tea party for all!</h2></div>
-    <div class="row1">
-        <div class="col-2">A place for everyone to kick back and relax while enjoying tea party snacks in regular sized portions. We want for everyone; old, young, and any gender/race, to feel comfortable and welcome while  spending time in our tea room. </div>
-        <div class="col-3"><img src="images/teabag.png" alt="tea"></div>
+    <div class="ourstory">
+        <div class="col-5"><img src="images/m-cuckovich.png" alt="Madison C"></div>
+        <div class="col-5">Madison Cuckovic</div>
+        <div class="col-5"><br>I created Lifetime Tea Room based on being inclusive. When I was younger the boys did their own thing and the girls had tea parties. Even if boys wanted to join in on the tea parties it would be frowned upon and called weak and girly. 
+<br><br>
+            Lifetime Tea Room was created around the fact that everyone should be able to enjoy tea party food, tea drinks and the atmosphere of a tea party. Boys and girls, men and women should be able to come together and enjoy something that was once gender specific.
+            <br><br>
+            Lifetime Tea Room is a tea party but the portions are effecient. Tea parties are seen as small and dainty so Lifetime Tea Room was created in thought of larger portions in order to give a filling meal. Overall, it is meant to give a tea party calm atmosphere which is meant to include everyone  no matter race, gender, sexuality, etc.c</div>
+
     </div>
+    <button id="toggle-nav" type="button">&#9776;</button>
+    <script>window.onload = function() {
+        // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+        let toggleNav = document.getElementById('toggle-nav');
+  
+        // Tell button to do something on click
+        toggleNav.addEventListener('click', function(){
+  
+          // toggle the body's class attribute
+          document.body.classList.toggle('nav-open');
+  
+        });
+      };</script>
+
 </body>
 </html>

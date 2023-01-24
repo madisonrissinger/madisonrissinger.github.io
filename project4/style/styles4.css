@@ -90,7 +90,7 @@ padding-top: 10px;}
         }
         /* Here, we override the rule when the body has a class of nav-open */
         body.nav-open #primary-nav{
-          max-height: 400px;
+          max-height: 600px;
           
         }
       }
